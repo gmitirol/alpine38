@@ -15,7 +15,9 @@ RUN set -xe &&\
   echo "${ALPINE_MIRROR_BASE}/alpine/v${VERSION}/community" >> /etc/apk/repositories && \
   apk update && \
   apk --no-cache --update upgrade && \
-  apk add --no-cache --update bash ca-certificates curl git jq nano openssl tzdata
+  apk add --no-cache --update bash ca-certificates curl git jq nano openssl tzdata && \
+  rm -rf /var/cache/apk/* && \
+  apk update
 
 # Install certificates bundle
 ADD TLS_CA_FILE /usr/local/share/ca-certificates/ca_bundle.crt
