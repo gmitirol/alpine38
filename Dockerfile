@@ -19,6 +19,9 @@ RUN set -xe &&\
   rm -rf /var/cache/apk/* && \
   apk update
 
+# The apk update command is run to ensure that the local package index is working.
+# Otherwise, apk commands emit warnings and the apk policy command fails.
+
 # Install certificates bundle
 ADD TLS_CA_FILE /usr/local/share/ca-certificates/ca_bundle.crt
 RUN set -xe &&\
