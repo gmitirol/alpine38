@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.2.7] - 2019-10-28
+- Update Alpine packages
+
 ## [1.2.6] - 2019-09-23
 - Update Alpine packages (fix CVE-2019-15903)
 
@@ -36,7 +39,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## 1.0.0 - 2018-07-24
 - Initial public release
 
-[Unreleased]:  https://github.com/gmitirol/alpine38/compare/1.2.6...HEAD
+[Unreleased]:  https://github.com/gmitirol/alpine38/compare/1.2.7...HEAD
+[1.2.7]: https://github.com/gmitirol/alpine38/compare/1.2.6...1.2.7
 [1.2.6]: https://github.com/gmitirol/alpine38/compare/1.2.5...1.2.6
 [1.2.5]: https://github.com/gmitirol/alpine38/compare/1.2.4...1.2.5
 [1.2.4]: https://github.com/gmitirol/alpine38/compare/1.2.3...1.2.4
